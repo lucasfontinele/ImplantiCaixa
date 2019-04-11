@@ -22,7 +22,7 @@ namespace CaixaPersonalizavel.Application.Util
 
         public IniFileHandler(string iniPath = null)
         {
-            Path = new FileInfo(iniPath ?? EXE + ".ini").FullName.ToString();
+            Path = new FileInfo(iniPath ?? EXE + ".ini").FullName;
         }
 
         public string Read(string Key, string Section = null)
