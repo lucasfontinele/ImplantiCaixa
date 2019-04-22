@@ -14,29 +14,30 @@ namespace CaixaPersonalizavel.Application.Connection
         private static IniFileHandler myIni = new IniFileHandler("Settings.ini");
 
         // MongoDB
-        private static readonly MongoClient _mongoClient = new MongoClient(myIni.Read("DatabaseUrl", "Mongo"));
+        private static readonly MongoClient MongoClient = new MongoClient("mongodb://root:%7CcSFu%405rFv%23h8*%3D@localhost:12220/admin?readPreference=primary");
+        //private static readonly MongoClient MongoClient = new MongoClient(myIni.Read("DatabaseUrl", "Mongo"));
 
         // MySQL        
-        private static readonly String _address = myIni.Read("Address", "MySQL");
-        private static readonly String _user = myIni.Read("User", "MySQL");
-        private static readonly String _password = myIni.Read("Password", "MySQL");
-        private static readonly String _database = myIni.Read("Database", "MySQL");
-        private static readonly uint _port = Convert.ToUInt32(myIni.Read("Port", "MySQL"));
+        private static readonly String Address = myIni.Read("Address", "MySQL");
+        private static readonly String User = myIni.Read("User", "MySQL");
+        private static readonly String Password = myIni.Read("Password", "MySQL");
+        private static readonly String Data = myIni.Read("Database", "MySQL");
+        //private static readonly uint Port = Convert.ToUInt32(myIni.Read("Port", "MySQL"));
 
 
         private static readonly MySqlBaseConnectionStringBuilder _strBuilder = new MySqlConnectionStringBuilder
         {
-            Server   = _address,
-            UserID   = _user,
-            Password = _password,
-            Database = _database,
-            Port     = _port
+            Server   = Address,
+            UserID   = User,
+            Password = Password,
+            Database = Data,
+            //Port = Port
         };
 
-        private static readonly MySqlConnection _mySqlClient = new MySqlConnection(_strBuilder.ToString());
+        private static readonly MySqlConnection MySqlClient = new MySqlConnection(_strBuilder.ToString());
 
         // Return Connections
-        public static MongoClient MongoClient() => _mongoClient;
-        public static MySqlConnection MySqlConnection() => _mySqlClient;
+        public static MongoClient MongoConnection() => MongoClient;
+        public static MySqlConnection MySqlConnection() => MySqlClient;        
     }
 }

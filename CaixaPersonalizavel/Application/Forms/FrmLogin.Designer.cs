@@ -48,7 +48,7 @@
             this.bunifuSeparator1.BackColor = System.Drawing.Color.Transparent;
             this.bunifuSeparator1.LineColor = System.Drawing.Color.FromArgb(((int)(((byte)(105)))), ((int)(((byte)(105)))), ((int)(((byte)(105)))));
             this.bunifuSeparator1.LineThickness = 1;
-            this.bunifuSeparator1.Location = new System.Drawing.Point(0, 298);
+            this.bunifuSeparator1.Location = new System.Drawing.Point(-7, 310);
             this.bunifuSeparator1.Name = "bunifuSeparator1";
             this.bunifuSeparator1.Size = new System.Drawing.Size(789, 35);
             this.bunifuSeparator1.TabIndex = 0;
@@ -85,7 +85,7 @@
             this.btnAcesso.IconVisible = true;
             this.btnAcesso.IconZoom = 90D;
             this.btnAcesso.IsTab = false;
-            this.btnAcesso.Location = new System.Drawing.Point(271, 47);
+            this.btnAcesso.Location = new System.Drawing.Point(271, 33);
             this.btnAcesso.Name = "btnAcesso";
             this.btnAcesso.Normalcolor = System.Drawing.Color.FromArgb(((int)(((byte)(52)))), ((int)(((byte)(152)))), ((int)(((byte)(219)))));
             this.btnAcesso.OnHovercolor = System.Drawing.Color.FromArgb(((int)(((byte)(41)))), ((int)(((byte)(128)))), ((int)(((byte)(185)))));
@@ -111,7 +111,7 @@
             this.bunifuMaterialTextbox1.LineIdleColor = System.Drawing.Color.Gray;
             this.bunifuMaterialTextbox1.LineMouseHoverColor = System.Drawing.Color.FromArgb(((int)(((byte)(46)))), ((int)(((byte)(204)))), ((int)(((byte)(113)))));
             this.bunifuMaterialTextbox1.LineThickness = 3;
-            this.bunifuMaterialTextbox1.Location = new System.Drawing.Point(271, 175);
+            this.bunifuMaterialTextbox1.Location = new System.Drawing.Point(271, 198);
             this.bunifuMaterialTextbox1.Margin = new System.Windows.Forms.Padding(4);
             this.bunifuMaterialTextbox1.Name = "bunifuMaterialTextbox1";
             this.bunifuMaterialTextbox1.Size = new System.Drawing.Size(241, 42);
@@ -130,7 +130,7 @@
             this.bunifuMaterialTextbox2.LineIdleColor = System.Drawing.Color.Gray;
             this.bunifuMaterialTextbox2.LineMouseHoverColor = System.Drawing.Color.FromArgb(((int)(((byte)(46)))), ((int)(((byte)(204)))), ((int)(((byte)(113)))));
             this.bunifuMaterialTextbox2.LineThickness = 3;
-            this.bunifuMaterialTextbox2.Location = new System.Drawing.Point(271, 238);
+            this.bunifuMaterialTextbox2.Location = new System.Drawing.Point(271, 261);
             this.bunifuMaterialTextbox2.Margin = new System.Windows.Forms.Padding(4);
             this.bunifuMaterialTextbox2.Name = "bunifuMaterialTextbox2";
             this.bunifuMaterialTextbox2.Size = new System.Drawing.Size(241, 42);
@@ -141,7 +141,7 @@
             // 
             this.lblName.AutoSize = true;
             this.lblName.Font = new System.Drawing.Font("Roboto", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.lblName.Location = new System.Drawing.Point(268, 158);
+            this.lblName.Location = new System.Drawing.Point(268, 181);
             this.lblName.Name = "lblName";
             this.lblName.Size = new System.Drawing.Size(77, 23);
             this.lblName.TabIndex = 5;
@@ -151,7 +151,7 @@
             // 
             this.bunifuCustomLabel2.AutoSize = true;
             this.bunifuCustomLabel2.Font = new System.Drawing.Font("Roboto", 14.25F);
-            this.bunifuCustomLabel2.Location = new System.Drawing.Point(268, 221);
+            this.bunifuCustomLabel2.Location = new System.Drawing.Point(268, 244);
             this.bunifuCustomLabel2.Name = "bunifuCustomLabel2";
             this.bunifuCustomLabel2.Size = new System.Drawing.Size(64, 23);
             this.bunifuCustomLabel2.TabIndex = 6;
@@ -163,7 +163,7 @@
             this.panel2.Dock = System.Windows.Forms.DockStyle.Top;
             this.panel2.Location = new System.Drawing.Point(0, 0);
             this.panel2.Name = "panel2";
-            this.panel2.Size = new System.Drawing.Size(782, 144);
+            this.panel2.Size = new System.Drawing.Size(782, 167);
             this.panel2.TabIndex = 8;
             // 
             // pictureBox1
@@ -171,7 +171,7 @@
             this.pictureBox1.Image = global::CaixaPersonalizavel.Properties.Resources.logo;
             this.pictureBox1.Location = new System.Drawing.Point(307, 3);
             this.pictureBox1.Name = "pictureBox1";
-            this.pictureBox1.Size = new System.Drawing.Size(169, 138);
+            this.pictureBox1.Size = new System.Drawing.Size(169, 161);
             this.pictureBox1.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
             this.pictureBox1.TabIndex = 11;
             this.pictureBox1.TabStop = false;

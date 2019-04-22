@@ -20,10 +20,10 @@ namespace CaixaPersonalizavel
 
         private void btnAcesso_Click(object sender, EventArgs e)
         {
-            #if DEBUG
-                FrmPrincipal frm = new FrmPrincipal();
-                frm.Show();                
-            #endif
+            FrmPrincipal frm = new FrmPrincipal();
+            frm.Show();            
+
+            this.Hide();
         }
     }
 }
