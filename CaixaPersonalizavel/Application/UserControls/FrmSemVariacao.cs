@@ -8,6 +8,7 @@ using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
 using CaixaPersonalizavel.Application.Connection;
+using CaixaPersonalizavel.Application.Forms;
 using MongoDB.Bson;
 using MongoDB.Driver;
 
@@ -64,5 +65,31 @@ namespace CaixaPersonalizavel.Application.UserControls
                 btnPesquisa.Enabled = true;
             }, TaskScheduler.FromCurrentSynchronizationContext());
         }
+
+        private void lvProdutos_Click(object sender, EventArgs e)
+        {
+            if (lvProdutos.SelectedItems.Count > 0)
+            {
+                ListViewItem item = lvProdutos.SelectedItems[0];
+
+                switch (MessageBox.Show("O produto tem desconto ou acréscimo?", "Caixa Personalizável Informa", MessageBoxButtons.YesNo, MessageBoxIcon.Question, MessageBoxDefaultButton.Button1))
+                {
+                    case DialogResult.Yes:
+                        ValorDescontoPorcentagem();
+                        break;
+                    case DialogResult.No:
+
+                        break;
+                }
+            }
+        }
+
+        private void ValorDescontoPorcentagem()
+        {
+            var frmDesconto = new FrmValorDesconto();
+
+            frmDesconto.Show();
+            this.Hide();
+        }           
     }
 }

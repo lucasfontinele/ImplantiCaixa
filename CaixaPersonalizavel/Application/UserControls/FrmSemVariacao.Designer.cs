@@ -30,8 +30,8 @@
         {
             System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(FrmSemVariacao));
             this.topPanel = new System.Windows.Forms.Panel();
-            this.txtPesquisa = new Bunifu.Framework.UI.BunifuTextbox();
             this.btnPesquisa = new Bunifu.Framework.UI.BunifuFlatButton();
+            this.txtPesquisa = new Bunifu.Framework.UI.BunifuTextbox();
             this.panel1 = new System.Windows.Forms.Panel();
             this.lvProdutos = new System.Windows.Forms.ListView();
             this.id = ((System.Windows.Forms.ColumnHeader)(new System.Windows.Forms.ColumnHeader()));
@@ -50,22 +50,6 @@
             this.topPanel.Name = "topPanel";
             this.topPanel.Size = new System.Drawing.Size(1328, 100);
             this.topPanel.TabIndex = 1;
-            // 
-            // txtPesquisa
-            // 
-            this.txtPesquisa.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(116)))), ((int)(((byte)(185)))), ((int)(((byte)(255)))));
-            this.txtPesquisa.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("txtPesquisa.BackgroundImage")));
-            this.txtPesquisa.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
-            this.txtPesquisa.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(52)))), ((int)(((byte)(73)))), ((int)(((byte)(94)))));
-            this.txtPesquisa.Icon = ((System.Drawing.Image)(resources.GetObject("txtPesquisa.Icon")));
-            this.txtPesquisa.Location = new System.Drawing.Point(453, 29);
-            this.txtPesquisa.Name = "txtPesquisa";
-            this.txtPesquisa.Size = new System.Drawing.Size(404, 42);
-            this.txtPesquisa.TabIndex = 5;
-            this.txtPesquisa.text = "";
-            this.txtPesquisa.Load += new System.EventHandler(this.txtPesquisa_Load);
-            this.txtPesquisa.Enter += new System.EventHandler(this.txtPesquisa_Enter);
-            this.txtPesquisa.Leave += new System.EventHandler(this.txtPesquisa_Leave);
             // 
             // btnPesquisa
             // 
@@ -102,6 +86,22 @@
             this.btnPesquisa.TextFont = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.btnPesquisa.Click += new System.EventHandler(this.btnPesquisa_Click);
             // 
+            // txtPesquisa
+            // 
+            this.txtPesquisa.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(116)))), ((int)(((byte)(185)))), ((int)(((byte)(255)))));
+            this.txtPesquisa.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("txtPesquisa.BackgroundImage")));
+            this.txtPesquisa.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
+            this.txtPesquisa.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(52)))), ((int)(((byte)(73)))), ((int)(((byte)(94)))));
+            this.txtPesquisa.Icon = ((System.Drawing.Image)(resources.GetObject("txtPesquisa.Icon")));
+            this.txtPesquisa.Location = new System.Drawing.Point(453, 29);
+            this.txtPesquisa.Name = "txtPesquisa";
+            this.txtPesquisa.Size = new System.Drawing.Size(404, 42);
+            this.txtPesquisa.TabIndex = 5;
+            this.txtPesquisa.text = "";
+            this.txtPesquisa.Load += new System.EventHandler(this.txtPesquisa_Load);
+            this.txtPesquisa.Enter += new System.EventHandler(this.txtPesquisa_Enter);
+            this.txtPesquisa.Leave += new System.EventHandler(this.txtPesquisa_Leave);
+            // 
             // panel1
             // 
             this.panel1.Controls.Add(this.lvProdutos);
@@ -125,6 +125,7 @@
             this.lvProdutos.TabIndex = 1;
             this.lvProdutos.UseCompatibleStateImageBehavior = false;
             this.lvProdutos.View = System.Windows.Forms.View.Details;
+            this.lvProdutos.Click += new System.EventHandler(this.lvProdutos_Click);
             // 
             // id
             // 

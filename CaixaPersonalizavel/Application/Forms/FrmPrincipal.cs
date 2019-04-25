@@ -26,7 +26,7 @@ namespace CaixaPersonalizavel.Application.Forms
             CadastroProduto();
         }
 
-        private void CadastroProduto()
+        public void CadastroProduto()
         {
             switch (MessageBox.Show("O produto possui variações?", "Caixa Personalizável Informa",
                 MessageBoxButtons.YesNo, MessageBoxIcon.Exclamation, MessageBoxDefaultButton.Button1))
